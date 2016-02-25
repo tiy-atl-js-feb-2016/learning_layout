@@ -1,16 +1,70 @@
+* {
+  border: 1px solid red !important;
+}
+
+img {
+  height: 100px;
+}
+
+/* target the small img's */ {
+  height: 10px;
+}
+
+
+ul.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  border: 1px solid gray;
+  float: left;
+}
+
+.clear-float {
+  clear: both;
+}
+
 .sandbox {
   background: #ccc;
   width: 500px;
   height: 400px;
+  overflow: hidden;
 }
 
-.box {
+.boxes-wrapper {
+  border: 1px solid blue;
+  overflow: hidden;
+  margin: 10px;
+  float: right;
+}
+
+.boxes-wrapper > div {
   border: 1px solid black;
   width: 50px;
   height: 50px;
+  float: right;
+  background: blue;
+  margin: 5px;
 }
 
-.sm {
+.boxes-wrapper > span {
+  float: right;
+  line-height: 50px;
+  vertical-align: -20px;
+  display: block;
+}
+
+.boxes-wrapper div:nth-child(2) {
+  background: orange;
+}
+
+p {
+  margin: 10px;
+}
+
+/*.sm {
   width: 25px;
   height: 25px;
   background: red;
@@ -26,4 +80,4 @@
   background: blue;
   float: right;
   margin: 10px;
-}
+}*/
